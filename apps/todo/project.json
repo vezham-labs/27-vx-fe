@@ -1,0 +1,36 @@
+{
+  "name": "todo",
+  "projectType": "application",
+  "sourceRoot": "apps/todo",
+  "implicitDependencies": ["todo-sync"],
+  "targets": {
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite",
+        "cwd": "apps/todo"
+      }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite preview",
+        "cwd": "apps/todo"
+      }
+    },
+    "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite build",
+        "cwd": "apps/todo"
+      }
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc -p tsconfig.app.json",
+        "cwd": "apps/todo"
+      }
+    }
+  }
+}

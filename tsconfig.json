@@ -7,6 +7,12 @@
   "references": [
     {
       "path": "./packages/vx/react"
+    },
+    {
+      "path": "./packages/todo-sync"
+    },
+    {
+      "path": "./apps/todo-e2e"
     }
   ],
   "compilerOptions": {

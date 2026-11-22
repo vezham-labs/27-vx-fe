@@ -652,6 +652,22 @@ importers:
         specifier: 17.7.3
         version: 17.7.3
 
+  apps/todo:
+    dependencies:
+      '@vezham/todo-sync':
+        specifier: workspace:*
+        version: link:../../packages/todo-sync
+      react:
+        specifier: 19.2.7
+        version: 19.2.7
+      react-dom:
+        specifier: 19.2.7
+        version: 19.2.7(react@19.2.7)
+
+  apps/todo-e2e: {}
+
+  packages/todo-sync: {}
+
   packages/vx/react: {}
 
 packages:
